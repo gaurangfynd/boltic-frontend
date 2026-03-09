@@ -56,8 +56,7 @@ export default function Page() {
   }
 
   return (
-    <div style={{ padding: 24, fontFamily: "system-ui" }}>
-      <h1>Store Information</h1>
+    <div style={{ padding: 24, fontFamily: "system-ui", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 
       <form onSubmit={handleSubmit} style={{ maxWidth: 500 }}>
         
@@ -124,5 +123,6 @@ const buttonStyle: React.CSSProperties = {
   border: "none",
   background: "#111",
   color: "#fff",
-  cursor: "pointer"
+  cursor: "pointer",
+  width: "100%"
 };
